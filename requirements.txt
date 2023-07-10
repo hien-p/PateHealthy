@@ -9,3 +9,4 @@ streamlit_option_menu
 langchain
 openai
 streamlit_pills
+streamlit_extras
