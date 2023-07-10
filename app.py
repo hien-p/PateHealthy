@@ -21,9 +21,9 @@ from botcore.bot.food_doctor import BotFoodDoctor
 from botcore.utils import load_example_input
 from pprint import pprint as ppt
 
-
+build_service(st.secrets['service_account'])
 import openai
-openai.api_key = ""
+openai.api_key = "openai"
 
 st.set_page_config(page_title="Pate Health AI", layout="wide",
                    initial_sidebar_state="collapsed")
