@@ -1,5 +1,10 @@
 google-cloud-aiplatform
 langchain
 python-dotenv
-duckduckgo-search
-
+streamlit_timeline
+streamlit_chat
+streamlit
+streamlit_chat
+streamlit_option_menu
+langchain
+openai
