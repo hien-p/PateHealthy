@@ -29,7 +29,7 @@ def enable_tracing(session:str='test-deploy') -> bool:
 def trace_palm2(model_name:str = 'text-bison', max_tokens:int = 280, session:str="test-deploy") -> VertexAI:
     enable_tracing(session)
     #service_json_path = f'{os.path.dirname(__file__)}/../.google/service_account.json'
-    service_json_path = f"./service_account.json"
+    service_json_path = f"{os.path.dirname(__file__)}/service_account.json"
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = service_json_path
     model = VertexAI(model_name=model_name, max_output_tokens=max_tokens,verbose=True, temperature=0.0)
     print("Vertex AI Palm 2 ready")
