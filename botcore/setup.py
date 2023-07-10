@@ -1,6 +1,8 @@
 from langchain.llms import VertexAI
 import os
 from dotenv import load_dotenv
+import json
+
 
 def load_my_env():
     env_path = os.path.dirname(__file__)
