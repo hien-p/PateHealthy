@@ -24,7 +24,7 @@ from pprint import pprint as ppt
 # from botcore.setup import build_service
 # build_service(st.secrets['service_account'])
 import openai
-openai.api_key = "openai"
+openai.api_key = st.secrets["openai"]
 
 st.set_page_config(page_title="Pate Health AI", layout="wide",
                    initial_sidebar_state="collapsed")
