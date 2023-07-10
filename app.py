@@ -21,6 +21,7 @@ from botcore.bot.food_doctor import BotFoodDoctor
 from botcore.utils import load_example_input
 from pprint import pprint as ppt
 
+from botcore.setup import build_service
 build_service(st.secrets['service_account'])
 import openai
 openai.api_key = "openai"
