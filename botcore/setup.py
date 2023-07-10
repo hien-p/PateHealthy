@@ -4,6 +4,12 @@ from dotenv import load_dotenv
 import json
 import streamlit as st
 
+
+from google.cloud import aiplatform
+
+aiplatform.init(project='sinuous-tuner-392203')
+
+
 def load_my_env():
     env_path = os.path.dirname(__file__)
     load_dotenv(f'{env_path}/../.google/env')
